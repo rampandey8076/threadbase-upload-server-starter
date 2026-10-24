@@ -13,6 +13,6 @@ export function verifyToken(req, res, next) {
     req.user = jwt.verify(auth.slice(7), JWT_SECRET);
     next();
   } catch {
-    res.status(401).json({ error: "Invalid token" });
+    res.status(401).json({ error: "Invalid token generate new one " });
   }
 }
