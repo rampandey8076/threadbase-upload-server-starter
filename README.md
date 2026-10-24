@@ -35,3 +35,4 @@ Do **not** edit `middleware/auth.js`.
 ## Test your work
 
 In Thunder Client / Postman: `POST /api/upload`, `Authorization: Bearer <token>`, body type **form-data**, field `avatar` (type: file) with an image. You should get a 201 with a `url`. Paste `http://localhost:3001<url>` in the browser - the image opens. A PDF should be rejected with 400. No token should give 401.
+# threadbase-upload-server-starter
